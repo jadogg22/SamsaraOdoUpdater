@@ -8,7 +8,7 @@ This project aims to bride the gap between the two programs used at our workplac
 
 * Retrieves odometer readings from Samsara for each vehicle.
 * Retrieves odometer readings from Omnitracks (we havn't quite phased out omni)
-* Updates each meter reading in Dosseir.
+* Uses data retrived to updates each meter reading in Dosseir.
 
 ## Installation
 
@@ -101,7 +101,7 @@ Because dossier kinda sucks there was no way(that I know of) to use our asset ID
 
 after authenticating we can take our first asset we need to update and ask if it exists in their system. They then return a buncha junk with our asset ID and their equipmentID we need this equipmentID inorder to then create the json to make a odometer update.
 
-Then I basically do that for all of the assets in the slice. I spent a lot of time trying to figure the best method out. Basically I reverse engenerred their requests for their ui and and it seems to be kinda what their doing. I've thought about caching the equipmentId's to make it quicker but honestly. I hate their system and there should be a bulk updater and or a way to just update them based on our asset ID. If their not going to provide the basic functionality like that they can pay for the 500 requests I make every day. Who knows what the other companies using their services do. Thanks for coming to my ted talk.
+Then I basically do that for all of the assets in the slice. I spent a lot of time trying to figure the best method out. Basically I reverse engenerred their requests for their ui and and it seems to be kinda what their doing. I've thought about caching the equipmentId's to make it quicker but honestly. I hate their system and there should be a bulk updater and or a way to just update them based on our asset ID. If their not going to provide the basic functionality like that they can pay for the 500 requests I make every day. Who knows what the other companies using their services do...  
 
 
 
